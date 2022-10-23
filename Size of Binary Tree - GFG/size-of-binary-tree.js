@@ -126,7 +126,6 @@ class Solution
 { 
     getSize(root){
        //code here
-       if(root === null) return 0;
-       return 1 + this.getSize(root.left) + this.getSize(root.right);
+        return root === null? 0 : 1 + this.getSize(root.left) + this.getSize(root.right);
     }  
 }  
