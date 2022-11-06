@@ -70,15 +70,13 @@ class Solution
         let a = BigInt(0);
         let b = BigInt(1);
         let arr = []
-        if(N <1){
-            return arr;
-        }
         for(let i = 0;i<N;i++){
             arr.push(b)
             let temp = a + b;
             a = b;
             b = temp;
         }
+        
         return arr;
     }
 }
