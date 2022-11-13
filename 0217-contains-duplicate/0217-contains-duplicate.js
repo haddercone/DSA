@@ -7,6 +7,7 @@ var containsDuplicate = function(nums) {
     for (let i=0; i< nums.length;i++){
         if(s.has(nums[i])){
             return true;
+            break;
         }
         s.add(nums[i])
     }
