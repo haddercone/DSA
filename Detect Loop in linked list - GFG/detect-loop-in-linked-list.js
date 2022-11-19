@@ -89,19 +89,17 @@ class Solution {
     detectLoop(head)
     {
         //your code here
-        // Floyd's circle finding algorithm
-        let slowHead = head;
-        let fastHead = head.next
+        let s = new Set()
+        let curr = head;
         
-        while (slowHead != fastHead){
-            if (fastHead === null || fastHead.next === null){
-                return false;
+        while(curr){
+            if(s.has(curr)){
+                return true;
             }
-            slowHead = slowHead.next;
-            fastHead = fastHead.next.next
+            s.add(curr)
+            curr = curr.next
         }
-        return true;
-        
+        return false;
     }
     
 }
