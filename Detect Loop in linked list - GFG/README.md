@@ -4,7 +4,7 @@
 
 <p><span style="font-size:18px"><strong>Example 1:</strong></span></p>
 
-<pre><span style="font-size:18px"><strong>Input:
+<pre style="position: relative;"><span style="font-size:18px"><strong>Input:
 </strong>N = 3
 value[] = {1,3,4}
 x(position at which tail is connected) = 2
@@ -14,11 +14,11 @@ Explanation: </strong>In above test case N = 3.
 given. Then value of&nbsp;x=2 is given which
 means last node is connected with xth
 node of linked list. Therefore, there
-exists a loop.</span></pre>
+exists a loop.</span><div class="open_grepper_editor" title="Edit &amp; Save To Grepper"></div></pre>
 
 <p><span style="font-size:18px"><strong>Example 2:</strong></span></p>
 
-<pre><span style="font-size:18px"><strong>Input:
+<pre style="position: relative;"><span style="font-size:18px"><strong>Input:
 </strong>N = 4
 value[] = {1,8,3,4}
 x = 0
@@ -26,7 +26,7 @@ x = 0
 Explanation: </strong>For N = 4 ,x = 0 means
 then lastNode-&gt;next = NULL, then
 the&nbsp;Linked list does not contains
-any loop.</span></pre>
+any loop.</span><div class="open_grepper_editor" title="Edit &amp; Save To Grepper"></div></pre>
 
 <p><span style="font-size:18px"><strong>Your Task:</strong><br>
 The task is to complete the function <strong>detectloop</strong>() which contains reference to the head as only argument.&nbsp; This function should return <strong>true</strong>&nbsp;if linked list contains loop, else return <strong>false</strong>.</span></p>
