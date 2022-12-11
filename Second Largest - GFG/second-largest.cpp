@@ -13,9 +13,9 @@ public:
 	    int i, first, second;
 
 	    // There should be at least two elements
-	    if (n < 2) {
-	        return -1;
-	    }
+	   // if (n < 2) {
+	   //     return -1;
+	   // }
 
 	    first = second = INT_MIN;
 	    for (i = 0; i < n; i++) {
