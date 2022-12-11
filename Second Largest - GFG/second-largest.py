@@ -10,7 +10,7 @@ class Solution:
                 second_large = large
                 large = arr[i]
                 
-            elif arr[i] > second_large and arr[i] < large: 
+            elif second_large < arr[i] < large: 
                 second_large  = arr[i]
             
         if second_large == -math.inf:
