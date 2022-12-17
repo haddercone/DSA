@@ -89,15 +89,18 @@ class Solution {
     detectLoop(head)
     {
         //your code here
-        let s = new Set()
-        let curr = head;
+        if ( head === null) {
+            return -1;
+        }
+        let first = head;
+        let second = head;
         
-        while(curr){
-            if(s.has(curr)){
+        while(second !== null && second.next !== null){
+            first = first.next;
+            second = second.next.next;
+            if(first === second ){
                 return true;
             }
-            s.add(curr)
-            curr = curr.next
         }
         return false;
     }
