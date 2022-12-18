@@ -5,22 +5,22 @@
 <p><br>
 <span style="font-size:18px"><strong>Example 1:</strong></span></p>
 
-<pre style="position: relative;"><span style="font-size:18px"><strong>Input:</strong>
+<pre><span style="font-size:18px"><strong>Input:</strong>
      1
     /  \
    2    3
 <strong>Output:</strong> 2</span>
-<div class="open_grepper_editor" title="Edit &amp; Save To Grepper"></div></pre>
+</pre>
 
 <p><span style="font-size:18px"><strong>Example 2:</strong></span></p>
 
-<pre style="position: relative;"><span style="font-size:18px"><strong>Input:</strong>
+<pre><span style="font-size:18px"><strong>Input:</strong>
   2
    \
     1
    /
  3
-<strong>Output:</strong> 3   </span><div class="open_grepper_editor" title="Edit &amp; Save To Grepper"></div></pre>
+<strong>Output:</strong> 3   </span></pre>
 
 <p><br>
 <span style="font-size:18px"><strong>Your Task:</strong><br>
