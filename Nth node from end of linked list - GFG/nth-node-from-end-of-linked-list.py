@@ -17,23 +17,48 @@
 #Function to find the data of nth node from the end of a linked list
 def getNthFromLast(head,n):
     #code here
-    length = 0
-    current = head
-    while current !=None:
-        current = current.next
-        length+=1
     
-    if n > length:
-        return -1
-    
+    ll_length = 0
     temp = head
-    for i in range(0, length - n):
+    
+    while temp is not None:
+        ll_length +=1
+        temp = temp.next
+    
+    pos = ll_length - n
+    
+    if(pos < 0):
+        return -1
+    temp = head
+    
+    for i in range(pos):
         temp = temp.next
     return temp.data
+    
+    
+    
+    
+    
+    
+    # ptr = head
+    # ref = head
+    
+    # counter = 0
+    # if ptr.head is not None:
+    #     while counter < N:
+    #         ptr = ptr.next
+    #         counter +=1
+    
         
     
+    # for i in range(n):
+    #     ref = ref.next
+        
+    # while ref !=None:
+    #     ref = ref.next
+    #     ptr = ptr.next
     
-
+    return ptr.data
 
 #{ 
  # Driver Code Starts
