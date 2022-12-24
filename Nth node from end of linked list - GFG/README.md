@@ -4,7 +4,7 @@
 
 <p><strong><span style="font-size:18px">Example 1:</span></strong></p>
 
-<pre style="position: relative;"><strong><span style="font-size:18px">Input:
+<pre><strong><span style="font-size:18px">Input:
 </span></strong><span style="font-size:18px">N = 2
 LinkedList: 1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;6-&gt;7-&gt;8-&gt;9
 <strong>Output: </strong>8<strong>
@@ -12,11 +12,11 @@ Explanation: </strong>In the first example, there
 are 9 nodes in linked list and we need
 to find 2nd node from end.&nbsp;2nd node
 from end is 8.&nbsp;&nbsp;</span>
-<div class="open_grepper_editor" title="Edit &amp; Save To Grepper"></div></pre>
+</pre>
 
 <p><strong><span style="font-size:18px">Example 2:</span></strong></p>
 
-<pre style="position: relative;"><strong><span style="font-size:18px">Input:
+<pre><strong><span style="font-size:18px">Input:
 </span></strong><span style="font-size:18px">N = 5
 LinkedList: 10-&gt;5-&gt;100-&gt;5
 <strong>Output: </strong>-1<strong>
@@ -24,7 +24,7 @@ Explanation: </strong>In the second example, there
 are 4 nodes in the linked list and we
 need to find 5th from the end.&nbsp;Since 'n'
 is more than the number of nodes in the
-linked list, the output is -1.</span><div class="open_grepper_editor" title="Edit &amp; Save To Grepper"></div></pre>
+linked list, the output is -1.</span></pre>
 
 <p><span style="font-size:18px"><strong>Your Task:</strong><br>
 The task is to complete the function <strong>getNthFromLast</strong>() which takes two <strong>arguments</strong>: <strong>reference </strong>to <strong>head and N</strong> and you need to<strong> return N<sup>th</sup> </strong>from the end or -1 in case node doesn't exist.</span></p>
