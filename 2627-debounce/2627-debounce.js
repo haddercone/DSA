@@ -8,7 +8,7 @@ var debounce = function(fn, t) {
     return function(...args) {
         if(id){clearTimeout(id)}
         id = setTimeout(() => {
-            fn.apply(null, args);
+            fn.apply(this, args);
         }, t)
     }
 };
