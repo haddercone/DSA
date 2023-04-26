@@ -36,7 +36,7 @@ var addTwoNumbers = function(l1, l2) {
         if(sum > 9){
             let rem = sum%10;
             newList.next = new ListNode(rem);
-        } else{
+        } else {
             newList.next = new ListNode(sum);
         }
         
@@ -48,7 +48,7 @@ var addTwoNumbers = function(l1, l2) {
             l2 = l2.next;
         } else if(l1){
             l1 = l1.next
-        } else{
+        } else {
             l2 = l2.next;
         }
 
