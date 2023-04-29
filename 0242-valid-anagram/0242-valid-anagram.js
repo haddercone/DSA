@@ -11,19 +11,21 @@ var isAnagram = function(s, t) {
     
     // create a map containing character frequency in s
     for(let i =0; i< s.length;i++){
-        if(map[s[i]]) map[s[i]]++;
+        if(map[s[i]]) map[s[i]]++; // increase character frequency when character is already present 
         else{
-            map[s[i]] = 1;
+            map[s[i]] = 1; // add character to 1 if not present in map
         }
     }
     
-    // reduce the character frequecy , when character is encountered;
+    // reduce the character frequecy , when character is encountered in t;
     for(let j =0; j<t.length;j++){
-        if(map[t[j]]) map[t[j]]--;
+        if(!map[t[j]]){
+            return false;
+        }
+        map[t[j]]--;
     }
-
-    return Object.values(map).reduce((a,b) => a + b) > 0 ? false : true;
-
+    
+    return true;
 
     
 };
