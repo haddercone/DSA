@@ -30,13 +30,15 @@ var rotateRight = function(head, k) {
         Here the length is 3
         1. For the 1 roation:
             - minroation will be :k=1,  1%3 = 1 e.g  3 -> 1 -> 2 -> null.
-        1. For the 2 roation:
+        2. For the 2 roation:
             - minroation will be :k=2,  2%3 = 2 e.g  2 -> 3 -> 1 -> null.
-        1. For the 3 roation:
+        3. For the 3 roation:
             - minroation will be :k=3,  3%3 = 0 e.g  1 -> 2 -> 3 -> null.
-        1. For the 4 roation:
-            - minroation will be :k=4,  4%3 = 1 e.g  2 -> 3 -> 1 -> null. 
-        Here after the 3 rotations we are getting the same   minroation;
+        4. For the 4 roation:
+            - minroation will be :k=4,  4%3 = 1 e.g  3 -> 1 -> 2 -> null. 
+        5. For the 5 roation:
+            - minroation will be :k=5,  5%3 = 2 e.g  2 -> 1 -> 3 -> null. 
+        Here after the 3 rotations we are getting the same minroation sequence;
         
     */
     // if we get the same number of rotations as of the length of the list , we'll receive the same list again
