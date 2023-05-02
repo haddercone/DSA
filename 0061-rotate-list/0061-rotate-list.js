@@ -37,7 +37,7 @@ var rotateRight = function(head, k) {
         4. For the 4 roation:
             - minroation will be :k=4,  4%3 = 1 e.g  3 -> 1 -> 2 -> null. 
         5. For the 5 roation:
-            - minroation will be :k=5,  5%3 = 2 e.g  2 -> 1 -> 3 -> null. 
+            - minroation will be :k=5,  5%3 = 2 e.g  2 -> 3 -> 1 -> null. 
         Here after the 3 rotations we are getting the same minroation sequence;
         
     */
