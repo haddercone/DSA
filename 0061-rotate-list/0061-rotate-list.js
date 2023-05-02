@@ -56,8 +56,10 @@ var rotateRight = function(head, k) {
         count++;
         
     }
-    let resNode = p2;
+    let resNode = p2; 
     p1.next = null; // break the link from the node
+    
+    // add the remaining  list to the head of the previous list
     while(p2){
         if(p2.next === null) {
             p2.next = head;
