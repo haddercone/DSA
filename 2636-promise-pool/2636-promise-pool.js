@@ -4,14 +4,17 @@
  * @return {Function}
  */
 var promisePool = async function(functions, n) {
-    async function executeNext(){
-        if(functions.length === 0) return;
-        const  fn = functions.shift();
-        await fn();
-        await executeNext();
+    let i = 0;
+    const next = async () => {
+        const fn = functions[i];
+        i++;
+        if(fn){
+            await fn();
+            return next();
+        }
     }
-    const batchPromises = Array(n).fill().map(executeNext);
-    await Promise.all(batchPromises);
+    return Promise.all(Array(n).fill().map(next))
+    
 };
 
 /**
