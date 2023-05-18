@@ -20,21 +20,6 @@ TimeLimitedCache.prototype.set = function(key, value, duration) {
     this.cache.set(key, {value, timer})
     return Boolean(keyExist)
     
-//     const currTime = Date.now();
-    
-//     // if key is accessible and un-expired then overide the values with the current values
-//     if(this.cache[key] && this.cache[key].expire > currTime ){
-//         this.cache[key].value = value;
-//         this.cache[key].expire = duration + currTime;
-//         return true;
-//     } else {
-//         // if key is un-accessible and expired put the values
-//         this.cache[key] = {
-//             value : value,
-//             expire : duration + currTime
-//         }
-//     }
-//     return false;
 };
 
 /** 
@@ -43,14 +28,6 @@ TimeLimitedCache.prototype.set = function(key, value, duration) {
  */
 TimeLimitedCache.prototype.get = function(key) {
     return this.cache.has(key) ? this.cache.get(key).value : -1;
-    
-    // const currTime = Date.now();
-    // // return value if key is un-expired and accessible
-    // if(this.cache[key] && this.cache[key].expire > currTime){
-    //     return this.cache[key].value;
-    // } else {
-    //     return -1;
-    // }
 };
 
 /** 
@@ -58,13 +35,7 @@ TimeLimitedCache.prototype.get = function(key) {
  */
 TimeLimitedCache.prototype.count = function() {
     return this.cache.size;
-//     let count = 0;
-//     const currTime = Date.now();
-    
-//     for(const key in this.cache){
-//         if(this.cache[key].expire > currTime) count++;
-//     }
-//     return count;
+
 };
 
 /**
