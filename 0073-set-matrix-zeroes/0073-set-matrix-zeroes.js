@@ -24,7 +24,7 @@ var setZeroes = function(matrix) {
     
     while(cols.length > 0){
         let col = cols.shift();
-        for(let i=0;i < m;i++){
+        for(let i=0;i<m;i++){
             matrix[i][col] = 0;
         }
     }
