@@ -16,6 +16,7 @@ var lengthOfLongestSubstring = function(s) {
                 maxCount = count;
             }            
         }
+        delete set;
     }
     return maxCount;
     
