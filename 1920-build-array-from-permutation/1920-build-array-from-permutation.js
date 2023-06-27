@@ -3,5 +3,5 @@
  * @return {number[]}
  */
 var buildArray = function(nums) {
-    return nums.map((_, i) => ele=nums[nums[i]])
+    return nums.map((ele, i) => ele=nums[nums[i]])
 };
