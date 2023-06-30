@@ -8,7 +8,7 @@ var kidsWithCandies = function(candies, extraCandies) {
     
     // Approch 2 : using reduce
     const res = candies.reduce((acc, curr) => {
-        let bool = (curr + extraCandies) >= maxNum ? true : false;
+        let bool = (curr + extraCandies) >= maxNum;
         acc.push(bool);
         return acc;
     }, []);
