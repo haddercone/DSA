@@ -6,34 +6,34 @@ Given two sorted arrays of size <strong>n</strong> and <strong>m</strong>&nbsp;r
 <p><br>
 <span style="font-size:18px"><strong>Example 1:</strong></span></p>
 
-<pre style="position: relative;"><span style="font-size:18px"><strong>Input</strong>: 
+<pre><span style="font-size:18px"><strong>Input</strong>: 
 n = 5, arr1[] = {1, 2, 3, 4, 5}  
 m = 3, arr2 [] = {1, 2, 3}
 <strong>Output</strong>: 1 2 3 4 5
 <strong>Explanation</strong>: Distinct elements including 
-both the arrays are: 1 2 3 4 5.</span><div class="open_grepper_editor" title="Edit &amp; Save To Grepper"></div></pre>
+both the arrays are: 1 2 3 4 5.</span></pre>
 
 <p>&nbsp;</p>
 
 <p><span style="font-size:18px"><strong>Example 2:</strong></span></p>
 
-<pre style="position: relative;"><span style="font-size:18px"><strong>Input</strong>: 
+<pre><span style="font-size:18px"><strong>Input</strong>: 
 n = 5, arr1[] = {2, 2, 3, 4, 5}  
 m = 5, arr2[] = {1, 1, 2, 3, 4}
 <strong>Output</strong>: 1 2 3 4 5
 <strong>Explanation</strong>: Distinct elements including 
-both the arrays are: 1 2 3 4 5.</span><div class="open_grepper_editor" title="Edit &amp; Save To Grepper"></div></pre>
+both the arrays are: 1 2 3 4 5.</span></pre>
 
 <p>&nbsp;</p>
 
 <p><span style="font-size:18px"><strong>Example 3:</strong></span></p>
 
-<pre style="position: relative;"><span style="font-size:18px"><strong>Input</strong>:
+<pre><span style="font-size:18px"><strong>Input</strong>:
 n = 5, arr1[] = {1, 1, 1, 1, 1}
 m = 5, arr2[] = {2, 2, 2, 2, 2}
 <strong>Output</strong>: 1 2
 <strong>Explanation</strong>: Distinct elements including 
-both the arrays are: 1 2.</span><div class="open_grepper_editor" title="Edit &amp; Save To Grepper"></div></pre>
+both the arrays are: 1 2.</span></pre>
 
 <p><br>
 <strong><span style="font-size:18px">Your Task:&nbsp;</span></strong><br>
