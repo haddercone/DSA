@@ -70,12 +70,46 @@ function main() {
 */
 
 class Solution {
-    //Function to return a list containing the union of the two arrays. 
-    findUnion(arr1, arr2, n, m)
-    {
-        //your code here
-        const s = [...new Set([...arr1, ...arr2])]
-        return s.sort((a,b) => a-b);
+    //Function to return a list containing the union of the two arrays.
+    findUnion(arr1, arr2, n, m) {
+        let i = 0;
+        let j = 0;
+        let arrayUnion = [];
         
+        while (i < n && j < m) {
+            if (arr1[i] === arr2[j]) {
+                if (arrayUnion.length === 0 || arrayUnion[arrayUnion.length - 1] !== arr1[i]) {
+                    arrayUnion.push(arr1[i]);
+                }
+                i++;
+                j++;
+            } else if (arr1[i] < arr2[j]) {
+                if (arrayUnion.length === 0 || arrayUnion[arrayUnion.length - 1] !== arr1[i]) {
+                    arrayUnion.push(arr1[i]);
+                }
+                i++;
+            } else {
+                if (arrayUnion.length === 0 || arrayUnion[arrayUnion.length - 1] !== arr2[j]) {
+                    arrayUnion.push(arr2[j]);
+                }
+                j++;
+            }
+        }
+        
+        while (i < n) {
+            if (arrayUnion.length === 0 || arrayUnion[arrayUnion.length - 1] !== arr1[i]) {
+                arrayUnion.push(arr1[i]);
+            }
+            i++;
+        }
+        
+        while (j < m) {
+            if (arrayUnion.length === 0 || arrayUnion[arrayUnion.length - 1] !== arr2[j]) {
+                arrayUnion.push(arr2[j]);
+            }
+            j++;
+        }
+        
+        return arrayUnion;
     }
 }
