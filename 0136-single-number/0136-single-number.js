@@ -3,12 +3,12 @@
  * @return {number}
  */
 var singleNumber = function(nums) {
-    return nums.reduce((acc,curr) => acc^curr)
+    return nums.reduce((acc,curr) => acc^curr, 0) // using bitwise XOR
     
     
     // const uniquenumberSum = [...new Set(nums)].reduce((acc,curr) => acc+curr, 0);
     // const numsSum = nums.reduce((acc,curr) => acc+curr, 0);
-    // return 2*uniquenumberSum - numsSum;
+    // return 2*uniquenumberSum - numsSum; // will get us the one number with the frequency of 1
     
     
     // nums.sort((a,b) => a-b);
@@ -18,6 +18,8 @@ var singleNumber = function(nums) {
     //     }
     // }
     //  return nums[nums.length -1]
+    
+    
     
     
 //     let map = new Map();
