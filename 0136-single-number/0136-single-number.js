@@ -3,10 +3,12 @@
  * @return {number}
  */
 var singleNumber = function(nums) {
+    return nums.reduce((acc,curr) => acc^curr)
     
-    const uniquenumberSum = [...new Set(nums)].reduce((acc,curr) => acc+curr, 0);
-    const numsSum = nums.reduce((acc,curr) => acc+curr, 0);
-    return 2*uniquenumberSum - numsSum;
+    
+    // const uniquenumberSum = [...new Set(nums)].reduce((acc,curr) => acc+curr, 0);
+    // const numsSum = nums.reduce((acc,curr) => acc+curr, 0);
+    // return 2*uniquenumberSum - numsSum;
     
     
     // nums.sort((a,b) => a-b);
