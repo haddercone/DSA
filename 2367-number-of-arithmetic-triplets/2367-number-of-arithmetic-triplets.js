@@ -6,11 +6,8 @@
 var arithmeticTriplets = function(nums, diff) {
     let count = 0
     
-    let set = new Set();
-    for(const num of nums){
-        if(set.has(num-diff) && set.has(num-2*diff)) count++;
-        set.add(num)
-    }
+    // TC: O(n^3)
+    // SC: O(1)
     
     // for(let i=0;i<nums.length;i++){
     //     for(let j=i;j<nums.length;j++){
@@ -19,5 +16,16 @@ var arithmeticTriplets = function(nums, diff) {
     //         }
     //     }
     // }
+    
+    
+    // TC: O(n)
+    // SC: O(n)
+    
+    let set = new Set();
+    for(const num of nums){
+        if(set.has(num-diff) && set.has(num-2*diff)) count++;
+        set.add(num)
+    }
+    
     return count;
 };
