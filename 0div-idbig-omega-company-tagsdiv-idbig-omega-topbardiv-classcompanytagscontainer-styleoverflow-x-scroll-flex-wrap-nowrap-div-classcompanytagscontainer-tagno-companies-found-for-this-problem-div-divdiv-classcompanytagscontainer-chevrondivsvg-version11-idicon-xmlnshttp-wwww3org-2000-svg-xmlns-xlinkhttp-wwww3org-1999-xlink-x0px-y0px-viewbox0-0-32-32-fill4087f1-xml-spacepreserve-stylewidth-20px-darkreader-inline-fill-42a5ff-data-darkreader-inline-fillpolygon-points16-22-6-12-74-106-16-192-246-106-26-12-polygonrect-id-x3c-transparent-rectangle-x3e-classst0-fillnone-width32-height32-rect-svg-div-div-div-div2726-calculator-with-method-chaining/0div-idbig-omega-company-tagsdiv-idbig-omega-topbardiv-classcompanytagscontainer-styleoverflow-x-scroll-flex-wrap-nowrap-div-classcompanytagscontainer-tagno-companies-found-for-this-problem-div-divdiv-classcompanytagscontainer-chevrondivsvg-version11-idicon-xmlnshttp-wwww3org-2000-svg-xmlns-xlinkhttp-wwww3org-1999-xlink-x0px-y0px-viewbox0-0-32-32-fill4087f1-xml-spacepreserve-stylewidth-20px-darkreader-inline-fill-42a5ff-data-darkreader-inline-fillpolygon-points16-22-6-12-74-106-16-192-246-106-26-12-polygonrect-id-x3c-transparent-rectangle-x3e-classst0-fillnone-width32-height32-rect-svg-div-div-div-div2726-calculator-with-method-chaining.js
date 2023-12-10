@@ -41,11 +41,11 @@ class Calculator {
 	divide(value) {
         if(value === 0) {
             this.value = "Division by zero is not allowed"
-            return this;
         } else {
-            this.value /= value
-            return this;
+            this.value /= value   
         }
+        return this;
+        
 	}
   
     /** 
