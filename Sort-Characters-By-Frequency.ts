@@ -6,8 +6,8 @@ function frequencySort(s: string): string {
 
     const sortedByFrequencies : string = Object.entries(count)
                                             .sort((a,b) => b[1] - a[1])
-                                            .map(ele => ele[0]
-                                            .repeat(ele[1])).join("");
+                                            .map(ele => ele[0].repeat(ele[1]))
+                                            .join("");
     return sortedByFrequencies;
 
 };
